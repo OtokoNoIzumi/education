@@ -141,30 +141,26 @@
         <nav class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm theme-border-b">
             <div class="container mx-auto px-4 py-3 flex justify-between items-center">
                 <div class="flex items-center space-x-2">
-                    <i class="fas fa-user text-primary-500 text-2xl"></i> <!-- 使用通用图标 -->
-                    <h1 class="text-xl font-bold text-gray-800 dark:text-white">个人主页</h1> <!-- 统一标题 -->
+                    <i class="fas fa-map-marked-alt text-primary-500 text-2xl"></i>
+                    <h1 class="text-xl font-bold text-gray-800 dark:text-white">导航应用与城市道路安全分析</h1>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <!-- 主题切换等可以根据需要添加 -->
-                    <!-- <button id="theme-toggle" ...> ... </button> -->
-                    <!-- <select id="custom-theme-selector" ...> ... </select> -->
-                    <!-- 公共导航链接 -->
-                    <div class="hidden md:flex space-x-4">
-                        <a href="../../index.html" class="text-sm font-medium text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400 transition-colors">首页</a>
-                        <a href="../test/interest.html" class="text-sm font-medium text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400 transition-colors">兴趣</a>
-                        <a href="trafic.html" class="text-sm font-medium text-primary-500 dark:text-primary-400 font-bold transition-colors">学业</a> <!-- 高亮当前页 -->
-                    </div>
+                    <!-- 只保留返回首页链接 -->
+                    <a href="../../index.html" class="text-sm font-medium text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400 transition-colors flex items-center">
+                        <i class="fas fa-home mr-1"></i> 返回首页
+                    </a>
+                    <!-- 移动菜单按钮 -->
                     <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 theme-btn">
                         <i class="fas fa-bars text-gray-700 dark:text-gray-300"></i>
                     </button>
                 </div>
             </div>
-            <!-- 移动端公共导航菜单 -->
+            <!-- 移动端导航菜单 -->
             <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-gray-900 theme-border-b animate-fade-in">
                 <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-                    <a href="../../index.html" class="text-sm font-medium text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400 transition-colors">首页</a>
-                    <a href="../test/interest.html" class="text-sm font-medium text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400 transition-colors">兴趣</a>
-                    <a href="trafic.html" class="text-sm font-medium text-primary-500 dark:text-primary-400 font-bold transition-colors">学业</a> <!-- 高亮当前页 -->
+                    <a href="../../index.html" class="text-sm font-medium text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400 transition-colors flex items-center">
+                        <i class="fas fa-home mr-1"></i> 返回首页
+                    </a>
                 </div>
             </div>
         </nav>
